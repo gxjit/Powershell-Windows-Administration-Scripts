@@ -91,7 +91,24 @@
         Package  = ''
         Enabled  = 'True'
     }
-
+    'GithubDesktop' = @{
+        Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\GitHubDesktop.exe'
+        Protocol = 'TCP'
+        Package  = ''
+        Enabled  = 'True'
+    }
+    'GitHub-git-remote-http' = @{
+        Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\resources\app\git\mingw64\bin\git-remote-http.exe'
+        Protocol = 'TCP'
+        Package  = ''
+        Enabled  = 'True'
+    }
+    'GitHub-git-remote-https' = @{
+        Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\resources\app\git\mingw64\bin\git-remote-https.exe'
+        Protocol = 'TCP'
+        Package  = ''
+        Enabled  = 'True'
+    }
 
 }
 
