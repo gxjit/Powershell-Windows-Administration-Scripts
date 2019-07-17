@@ -179,5 +179,12 @@
     Dnscache = 'AutomaticDelayedStart'
     netprofm = 'AutomaticDelayedStart'
     NlaSvc = 'AutomaticDelayedStart'
-
+    BTAGService = 'Manual'
+    irmon = 'Manual'
+    FTPSVC = 'Manual'
+    sshd = 'Manual'
+    PushToInstall = 'Manual'
+    XboxGipSvc = 'Manual'
+    xbgm = 'Manual'
+    mrxsmb10 = 'Manual'
 }

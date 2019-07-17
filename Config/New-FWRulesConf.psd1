@@ -35,13 +35,13 @@
         Program  = '%PROGRAMDATA%\chocolatey\lib\tor-browser\tools\tor-browser\Browser\firefox.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'Tor Router' = @{
         Program  = '%PROGRAMDATA%\chocolatey\lib\tor-browser\tools\tor-browser\Browser\TorBrowser\Tor\tor.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'youtube-dl' = @{
         Program  = '%PROGRAMDATA%\chocolatey\lib\youtube-dl\tools\youtube-dl.exe'
@@ -53,13 +53,13 @@
         Program  = '%PROGRAMFILES%\Git\mingw64\libexec\git-core\git-remote-http.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'git-remote-https' = @{
         Program  = '%PROGRAMFILES%\Git\mingw64\libexec\git-core\git-remote-https.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'Go' = @{
         Program  = '%SYSTEMDRIVE%\Go\bin\go.exe'
@@ -71,7 +71,7 @@
         Program  = '%PROGRAMFILES%\FileZilla FTP Client\filezilla.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'PythonVM' = @{
         Program  = '%SYSTEMDRIVE%\Python37\python.exe'
@@ -89,25 +89,25 @@
         Program  = '%PROGRAMFILES%\qBittorrent\qbittorrent.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'GithubDesktop' = @{
         Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\GitHubDesktop.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'GitHub-git-remote-http' = @{
         Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\resources\app\git\mingw64\bin\git-remote-http.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
     'GitHub-git-remote-https' = @{
         Program  = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.0.3\resources\app\git\mingw64\bin\git-remote-https.exe'
         Protocol = 'TCP'
         Package  = ''
-        Enabled  = 'True'
+        Enabled  = 'False'
     }
 
 }
