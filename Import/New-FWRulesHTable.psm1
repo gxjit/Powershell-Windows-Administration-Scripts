@@ -18,7 +18,7 @@ function New-FWRulesHTable {
 
             $ParamTable = @{
                 DisplayName = $rule
-                Program     = $RulesHTable.$rule.Program
+                Program     = $([System.Environment]::ExpandEnvironmentVariables($($RulesHTable.$rule.Program)))
                 Protocol    = $RulesHTable.$rule.Protocol
                 Enabled     = $RulesHTable.$rule.Enabled
                 Direction   = 'Outbound'
