@@ -22,7 +22,7 @@ catch {
     "`n$($PSItem.CategoryInfo)`n")
 
     Exit
-    
+
 }
 finally {
     # Clear Flags
@@ -59,13 +59,13 @@ $Components = @('Client for Microsoft Networks'
                 )
 
 foreach ($Component in $Components){
-    Disable-NetAdapterBinding -Name Ethernet -DisplayName $Component
+    Disable-NetAdapterBinding -Name "*" -DisplayName $Component
 
 }
 
 Write-Output "Disable TCP/IPv4 'register connection's addresses in DNS'..."  ###
 
-Set-DNSClient -InterfaceAlias Ethernet -RegisterThisConnectionsAddress $false
+Set-DNSClient -InterfaceAlias "*" -RegisterThisConnectionsAddress $false
 
 Write-Output "Disable IGMP"  ###
 
