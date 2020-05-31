@@ -1,4 +1,4 @@
-
+﻿
 
 # Copyright (c) 2019 Gurjit Singh
 
@@ -19,7 +19,7 @@ try {
 catch {
 
     Write-Output ("n`nError Details: `n$($PSItem.Exception)`n" +
-    "`n$($PSItem.CategoryInfo)`n")
+        "`n$($PSItem.CategoryInfo)`n")
 
     Exit
 
@@ -48,24 +48,25 @@ Set-ScriptStart -Title $Title -LogFile $LogFile
 
 Write-Output "Disable Various Network Adapter Bindings..."  ###
 
-$Components = @('Client for Microsoft Networks'
-                'File and Printer Sharing for Microsoft Networks'
-                'QoS Packet Scheduler'
-                'Microsoft Network Adapter Multiplexor Protocol'
-                'Microsoft LLDP Protocol Driver'
-                'Internet Protocol Version 6 (TCP/IPv6)'
-                'Link-Layer Topology Discovery Responder'
-                'Link-Layer Topology Discovery Mapper I/O Driver'
-                )
+$Components = @(
+    'Client for Microsoft Networks'
+    'File and Printer Sharing for Microsoft Networks'
+    'QoS Packet Scheduler'
+    'Microsoft Network Adapter Multiplexor Protocol'
+    'Microsoft LLDP Protocol Driver'
+    'Internet Protocol Version 6 (TCP/IPv6)'
+    'Link-Layer Topology Discovery Responder'
+    'Link-Layer Topology Discovery Mapper I/O Driver'
+)
 
-foreach ($Component in $Components){
+foreach ($Component in $Components) {
     Disable-NetAdapterBinding -Name "*" -DisplayName $Component
 
 }
 
 Write-Output "Disable TCP/IPv4 'register connection's addresses in DNS'..."  ###
 
-Set-DNSClient -InterfaceAlias "*" -RegisterThisConnectionsAddress $false
+Set-DnsClient -InterfaceAlias "*" -RegisterThisConnectionsAddress $false
 
 Write-Output "Disable IGMP"  ###
 
@@ -75,7 +76,7 @@ Write-Output "Disable NetBIOS over TCP/IP"  ###
 
 $adapters = (Get-WmiObject win32_networkadapterconfiguration)
 
-foreach ($adapter in $adapters){
+foreach ($adapter in $adapters) {
     $null = $adapter.settcpipnetbios(2)
 
 }

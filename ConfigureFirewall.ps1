@@ -1,4 +1,4 @@
-
+﻿
 
 # Copyright (c) 2019 Gurjit Singh
 
@@ -26,7 +26,7 @@ try {
 catch {
 
     Write-Output ("n`nError Details: `n$($PSItem.Exception)`n" +
-    "`n$($PSItem.CategoryInfo)`n")
+        "`n$($PSItem.CategoryInfo)`n")
 
     Exit
     
@@ -59,7 +59,7 @@ Reset-Firewall
 
 Write-Output "Enable Profiles..."   ###
 
-Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
+Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled True
 
 Write-Output "Configure Profiles..."    ###
 

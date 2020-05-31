@@ -1,4 +1,4 @@
-
+﻿
 function Get-Admin() {
 
     Begin {
@@ -14,9 +14,9 @@ function Get-Admin() {
             try {
 
                 $ProcParam = @{
-                    FilePath = 'powershell'
+                    FilePath     = 'powershell'
                     ArgumentList = "-File `"$($MyInvocation.PSCommandPath)`" -NoExit"
-                    Verb = 'runAs'
+                    Verb         = 'runAs'
 
                 }
 

@@ -1,4 +1,4 @@
-
+﻿
 
 function Set-ScriptStart {
 
@@ -13,7 +13,7 @@ function Set-ScriptStart {
     Start-Transcript -Path "$($MyInvocation.PSScriptRoot)\$LogFile" -Append
     $host.ui.RawUI.WindowTitle = $Title
     Write-Output ("`n----------------------------`n" +
-                  "----------------------------`n")
+        "----------------------------`n")
 
     Write-Output ("$Title`n$(Get-Date)`n")
 
@@ -22,7 +22,7 @@ function Set-ScriptStart {
 function Set-ScriptEnd () {
     
     Write-Output ("`n----------------------------`n" +
-                  "----------------------------`n")
+        "----------------------------`n")
     
 
     Write-Output "`n"

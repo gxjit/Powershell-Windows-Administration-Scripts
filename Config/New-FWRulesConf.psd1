@@ -1,13 +1,13 @@
-
+﻿
 
 @{
-    'Firefox'                 = @{
+    'Firefox'                = @{
         Program  = '%PROGRAMFILES%\Mozilla Firefox\firefox.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'Chrome'                  = @{
+    'Chrome'                 = @{
         Program  = '%PROGRAMFILES(x86)%\BraveSoftware\Brave-Browser\Application\brave.exe'
         Protocol = 'TCP'
         Package  = ''
@@ -19,91 +19,91 @@
         Package  = ''
         Enabled  = 'True'
     }
-    'Choco'                   = @{
+    'Choco' = @{
         Program  = '%PROGRAMDATA%\chocolatey\choco.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'Microsoft Edge'          = @{
+    'Microsoft Edge'         = @{
         Program  = 'ANY'
         Protocol = 'TCP'
         Package  = 'S-1-15-2-3624051433-2125758914-1423191267-1740899205-1073925389-3782572162-737981194'
         Enabled  = 'True'
     }
-    'Windows SmartScreen'     = @{
+    'Windows SmartScreen'    = @{
         Program  = '%WINDIR%\System32\smartscreen.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'VSCode'                  = @{
+    'VSCode'                 = @{
         Program  = '%USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\code.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'git-cmder'        = @{
+    'git-cmder' = @{
         Program  = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\mingw64\bin\git.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'git-cmder-ssh'        = @{
+    'git-cmder-ssh'          = @{
         Program  = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\usr\bin\ssh.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'git-cmder-remote-https'        = @{
+    'git-cmder-remote-https' = @{
         Program  = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\mingw64\libexec\git-core\git-remote-https.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'hub-cli-cmder'        = @{
+    'hub-cli-cmder'          = @{
         Program  = '%SYSTEMDRIVE%\Cmder\bin\hub.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'True'
     }
-    'PythonVM'                = @{
+    'PythonVM'               = @{
         Program  = '%USERPROFILE%\AppData\Local\Programs\Python\Python38\python.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'NodeJs'                  = @{
+    'NodeJs' = @{
         Program  = '%PROGRAMFILES%\nodejs\node.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'Go'                      = @{
+    'Go'                     = @{
         Program  = '%SYSTEMDRIVE%\Go\bin\go.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'FileZilla'               = @{
+    'FileZilla'              = @{
         Program  = '%PROGRAMFILES%\FileZilla FTP Client\filezilla.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'Tor Browser'             = @{
+    'Tor Browser' = @{
         Program  = '%PROGRAMDATA%\chocolatey\lib\tor-browser\tools\tor-browser\Browser\firefox.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'Tor Router'              = @{
+    'Tor Router' = @{
         Program  = '%PROGRAMDATA%\chocolatey\lib\tor-browser\tools\tor-browser\Browser\TorBrowser\Tor\tor.exe'
         Protocol = 'TCP'
         Package  = ''
         Enabled  = 'False'
     }
-    'qBittorrent'             = @{
+    'qBittorrent' = @{
         Program  = '%PROGRAMFILES%\qBittorrent\qbittorrent.exe'
         Protocol = 'TCP'
         Package  = ''

@@ -1,4 +1,4 @@
-
+﻿
 
 function New-FWRulesHTable {
     param (
@@ -18,15 +18,15 @@ function New-FWRulesHTable {
 
             $ParamTable = @{
                 DisplayName = $rule
-                Program     = $([System.Environment]::ExpandEnvironmentVariables($($RulesHTable.$rule.Program)))
-                Protocol    = $RulesHTable.$rule.Protocol
-                Enabled     = $RulesHTable.$rule.Enabled
-                Direction   = 'Outbound'
-                Action      = 'Allow'
-                Profile     = 'Any'
+                Program = $([System.Environment]::ExpandEnvironmentVariables($($RulesHTable.$rule.Program)))
+                Protocol = $RulesHTable.$rule.Protocol
+                Enabled = $RulesHTable.$rule.Enabled
+                Direction = 'Outbound'
+                Action = 'Allow'
+                Profile = 'Any'
             }
 
-            if ($RulesHTable.$rule.Package -ne ''){
+            if ($RulesHTable.$rule.Package -ne '') {
                 $ParamTable.Add('Package', $RulesHTable.$rule.Package)
             }
 

@@ -1,7 +1,8 @@
 
 
 @{
-    "JunkApps" = @("*3d*"
+    "JunkApps" = @(
+        "*3d*"
         "*3dbuilder*"
         "*Asphalt8Airborne*"
         "*CandyCrushSaga*"

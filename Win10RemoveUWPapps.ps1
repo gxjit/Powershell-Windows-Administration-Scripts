@@ -1,4 +1,4 @@
-
+﻿
 
 # Copyright (c) 2019 Gurjit Singh
 
@@ -21,7 +21,7 @@ try {
 catch {
 
     Write-Output ("n`nError Details: `n$($PSItem.Exception)`n" +
-    "`n$($PSItem.CategoryInfo)`n")
+        "`n$($PSItem.CategoryInfo)`n")
 
     Exit
     
@@ -48,7 +48,7 @@ $JunkApps = $Apps2Remove.JunkApps
 
 $ErrorActionPreference = "SilentlyContinue"
 
-foreach ($JunkApp in $JunkApps){
+foreach ($JunkApp in $JunkApps) {
     Write-Output "Removing $JunkApp"
     Get-AppxPackage -Name $JunkApp | Remove-AppxPackage
     # Get-AppxPackage -Name $JunkApp | Remove-AppxPackage -AllUsers

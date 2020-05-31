@@ -1,4 +1,4 @@
-
+﻿
 
 # Copyright (c) 2019 Gurjit Singh
 
@@ -22,7 +22,7 @@ try {
 catch {
 
     Write-Output ("n`nError Details: `n$($PSItem.Exception)`n" +
-    "`n$($PSItem.CategoryInfo)`n")
+        "`n$($PSItem.CategoryInfo)`n")
 
     Exit
     
