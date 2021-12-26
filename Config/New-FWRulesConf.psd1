@@ -105,7 +105,7 @@
     }
     'qBittorrentPortable' = @{
         Program = 'D:\PortableApps\qBittorrentPortable\App\qBittorrent\qbittorrent.exe'
-        Protocol = 'TCP'
+        Protocol = 'Any'
         Package = ''
         Enabled = 'False'
     }
