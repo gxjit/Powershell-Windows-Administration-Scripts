@@ -64,10 +64,10 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled True
 Write-Output "Configure Profiles..."    ###
 
 $ProfileParam = @{
-    All                   = $true
-    AllowInboundRules     = 'False'
-    NotifyOnListen        = 'True'
-    DefaultInboundAction  = 'Block'
+    All = $true
+    AllowInboundRules = 'False'
+    NotifyOnListen = 'True'
+    DefaultInboundAction = 'Block'
     DefaultOutboundAction = 'Block'
 
 }
