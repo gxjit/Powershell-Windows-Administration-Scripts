@@ -67,14 +67,14 @@
         Package = ''
         Enabled = 'True'
     }
-    # 'hub-cli-cmder'          = @{
-    #     Program = 'D:\PortableApps\hub.exe'
-    #     Protocol = 'TCP'
-    #     Package = ''
-    #     Enabled = 'True'
-    # }
+    'hub-cli-cmder'          = @{
+        Program = 'D:\PortableApps\hub.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
     'PythonVM' = @{
-        Program = '%USERPROFILE%\AppData\Local\Programs\Python\Python38\python.exe'
+        Program = '%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'False'
