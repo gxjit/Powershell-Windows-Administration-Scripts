@@ -54,7 +54,7 @@ $sys.AutomaticManagedPagefile = $false
 
 $sys.put()
 
-$pageFile = Get-WmiObject Win32_PagefileSetting | Where-Object {$_.name -eq "%SYSTEMDRIVE%\pagefile.sys"}
+$pageFile = Get-WmiObject Win32_PagefileSetting | Where-Object { $_.name -eq "%SYSTEMDRIVE%\pagefile.sys" }
 
 
 $pageFile.InitialSize = 512 # in MB
@@ -68,10 +68,10 @@ Get-WmiObject WIN32_Pagefile | Select-Object Name, InitialSize, MaximumSize, Fil
 
 # Optimize Event Logs
 
-$Logs = Get-Eventlog -List | select -ExpandProperty Log
+$Logs = Get-EventLog -List | select -ExpandProperty Log
 
 foreach ($Log in $Logs) {
-    Limit-Eventlog -Logname $Log -MaximumSize 20Mb -OverflowAction OverwriteAsNeeded
+    Limit-EventLog -LogName $Log -MaximumSize 20Mb -OverflowAction OverwriteAsNeeded
 }
 
 

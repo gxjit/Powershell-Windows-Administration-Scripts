@@ -131,7 +131,7 @@
     Wecsvc = 'Manual'
     WiaRpc = 'Manual'
     WinHttpAutoProxySvc = 'Manual'
-    Wlansvc = 'Manual'
+    # Wlansvc = 'Manual'
     WpnService = 'Manual'
     WwanSvc = 'Manual'
     bthserv = 'Manual'

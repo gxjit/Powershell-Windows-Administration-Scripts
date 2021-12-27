@@ -8,13 +8,13 @@
         Enabled = 'True'
     }
     'Brave' = @{
-        Program = '%PROGRAMFILES(x86)%\BraveSoftware\Brave-Browser\Application\brave.exe'
+        Program = '%PROGRAMFILES%\BraveSoftware\Brave-Browser\Application\brave.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
     }
     'BraveUpdate'            = @{
-        Program = '%PROGRAMFILES(x86)%\BraveSoftware\Update\BraveUpdate.exe'
+        Program = '%PROGRAMFILES%\BraveSoftware\Update\BraveUpdate.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
@@ -50,19 +50,19 @@
         Enabled = 'False'
     }
     'git-cmder'              = @{
-        Program = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\mingw64\bin\git.exe'
+        Program = 'D:\PortableApps\Cmder\vendor\git-for-windows\mingw64\bin\git.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
     }
     'git-cmder-ssh'          = @{
-        Program = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\usr\bin\ssh.exe'
+        Program = 'D:\PortableApps\Cmder\vendor\git-for-windows\usr\bin\ssh.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
     }
     'git-cmder-remote-https' = @{
-        Program = '%SYSTEMDRIVE%\Cmder\vendor\git-for-windows\mingw64\libexec\git-core\git-remote-https.exe'
+        Program = 'D:\PortableApps\Cmder\vendor\git-for-windows\mingw64\libexec\git-core\git-remote-https.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
