@@ -67,8 +67,26 @@
         Package = ''
         Enabled = 'True'
     }
-    'hub-cli-cmder'          = @{
-        Program = 'D:\PortableApps\hub.exe'
+    'hub-cli'          = @{
+        Program = 'D:\PortableApps\bin\hub.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'gh-cli'          = @{
+        Program = 'D:\PortableApps\bin\gh.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'aria2c'          = @{
+        Program = 'D:\PortableApps\bin\aria2c.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'wget'          = @{
+        Program = 'D:\PortableApps\bin\wget.exe'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
@@ -121,8 +139,38 @@
         Package = ''
         Enabled = 'False'
     }
+    'WinSCP' = @{
+        Program = 'D:\PortableApps\WinSCP\WinSCP.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'TelegramPortable' = @{
+        Program = 'D:\PortableApps\Telegram\Telegram.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'False'
+    }
+    'RatioMaster.NET' = @{
+        Program = 'D:\PortableApps\RatioMaster.NET\RatioMaster.NET.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
     'Zoom' = @{
         Program = '%USERPROFILE%\AppData\Roaming\Zoom\bin\zoom.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'OpenSSH' = @{
+        Program = '%WINDIR%\System32\OpenSSH\ssh.exe'
+        Protocol = 'TCP'
+        Package = ''
+        Enabled = 'True'
+    }
+    'Ping' = @{
+        Program = '%WINDIR%\System32\PING.EXE'
         Protocol = 'TCP'
         Package = ''
         Enabled = 'True'
@@ -130,12 +178,6 @@
     #
     # TODO: Add Ports
     #
-    # 'OpenSSH'                 = @{
-    #     Program = '%WINDIR%\System32\openssh\ssh.exe'
-    #     Protocol = 'TCP'
-    #     Package = ''
-    #     Enabled = 'False'
-    # }
     # 'GithubDesktop' = @{
     #     Program = '%USERPROFILE%\AppData\Local\GitHubDesktop\app-2.1.0\GitHubDesktop.exe'
     #     Protocol = 'TCP'
